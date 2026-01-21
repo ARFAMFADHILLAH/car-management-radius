@@ -32,5 +32,8 @@ Aplikasi web peminjaman mobil internal berbasis PHP & MySQL.
 
 ---
 
-© 2026 Car Rental Radius
+© 2026 — Created by **Arfa Muhammad Fadhillah** for **PT Radius Allkindo Electric** ❤️  
+All rights reserved.
+
+
 
