@@ -1,0 +1,38 @@
+.welcome-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid #b81414;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.info-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.info-box h4 {
+    margin-bottom: 15px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box li {
+    margin-bottom: 10px;
+}
+
+.info-box i {
+    width: 20px;
+    margin-right: 8px;
+    color: #555;
+}

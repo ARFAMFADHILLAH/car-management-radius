@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* CENTER LAYAR */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1cc88a, #4e73df);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTAINER */
+.register-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD */
+.register-card {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* BAGIAN KIRI & KANAN */
+.register-image,
+.register-form {
+    flex: 1;
+}
+
+/* IMAGE */
+.register-image {
+    background: url("register-car.jpg") center/cover no-repeat;
+    padding: 40px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: overlay;
+}
+
+.register-image h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* FORM */
+.register-form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-form h1 {
+    text-align: center;
+    color: #b81414;
+    margin-bottom: 30px;
+}
+
+/* FORM LAYOUT */
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* mendukung responsif */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* INPUT */
+input, select {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+/* FOCUS */
+input:focus, select:focus {
+    border-color: #d22e2e;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.btn-register {
+    background: #b81414;
+    color: #fff;
+}
+
+.btn-register:hover {
+    background: #d22e2e;
+}
+
+/* PASSWORD WRAPPER */
+.password-wrapper {
+    position: relative;
+}
+
+/* ICON EYE */
+.toggle-password {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+    user-select: none;
+}
+
+.toggle-password:hover {
+    color: #1cc88a;
+}
+
+/* LINKS */
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    font-size: 14px;
+    color: #4e73df;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Placeholder untuk select */
+select option:first-child {
+    color: #8b8b8b; 
+}
+
+/* Saat user memilih option lain, warnanya default */
+select {
+    color: #333; 
+}
+
+/* Agar placeholder tetap abu-abu saat select belum dipilih */
+select:invalid {
+    color: #8b8b8b;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .register-card {
+        flex-direction: column;
+    }
+
+    .register-image {
+        display: none;
+    }
+
+    .register-form {
+        padding: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,71 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card i {
+    font-size: 32px;
+}
+
+.card h2 {
+    margin: 5px 0 0;
+}
+
+.blue { border-left: 4px solid #3498db; }
+.red { border-left: 4px solid #e74c3c; }
+.yellow { border-left: 4px solid #f1c40f; }
+.green { border-left: 4px solid #2ecc71; }
+
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: 600;
+    background: #f9f9f9;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Kolom Aksi */
+td.text-center {
+    width: 120px;
+}
+
+/* Tombol Detail */
+.btn-detail {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
