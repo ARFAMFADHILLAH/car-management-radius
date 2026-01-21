@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://www.radius.co.id/wp-content/uploads/2025/12/logo-radius-background-putih-1284x800-1.webp" 
        alt="Radius Logo" 
-       width="300">
+       width="500">
 </p>
 
 # 🚗 Car Rental Radius
@@ -33,3 +33,4 @@ Aplikasi web peminjaman mobil internal berbasis PHP & MySQL.
 ---
 
 © 2026 Car Rental Radius
+
