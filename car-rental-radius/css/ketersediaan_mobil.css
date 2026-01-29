@@ -1,0 +1,50 @@
+.car-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.car-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-header h3 {
+    margin: 0;
+}
+
+.plate {
+    font-size: 13px;
+    color: #777;
+}
+
+.available {
+    margin-top: 10px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.unavailable {
+    margin-top: 10px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.schedule th, .schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.schedule th {
+    background: #f4f6f8;
+}
