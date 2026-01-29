@@ -1,0 +1,126 @@
+/* ========================
+   Container utama
+======================== */
+.profile-card {
+    background: #fff;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================
+   Foto Profil
+======================== */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid #667eea;
+}
+
+/* ========================
+   Form Upload Foto
+======================== */
+.profile-card form.upload-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.profile-card form.upload-photo input[type="file"] {
+    font-size: 12px;
+    width: 200px;
+}
+
+.profile-card form.upload-photo button {
+    background: #667eea;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.profile-card form.upload-photo button:hover {
+    background: #5563d6;
+}
+
+/* ========================
+   Nama & Role
+======================== */
+.profile-card h1 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    word-break: break-word;
+}
+
+.profile-card .job {
+    font-size: 14px;
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+/* ========================
+   Form Edit Profil
+======================== */
+.profile-card .info {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.profile-card .info form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-card .info form p {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.profile-card .info form input[type="text"],
+.profile-card .info form input[type="email"] {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.profile-card .info form button {
+    align-self: flex-end;
+    background: #28a745;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.profile-card .info form button:hover {
+    background: #218838;
+}
+
+/* ========================
+   Tampilan statis (role & bergabung)
+======================== */
+.profile-card .info p span {
+    font-weight: 500;
+    color: #333;
+}

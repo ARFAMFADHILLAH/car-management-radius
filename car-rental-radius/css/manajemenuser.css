@@ -1,0 +1,286 @@
+/* ================= CONTENT ================= */
+.content {
+padding: 24px;
+background: #f5f7fb;
+min-height: 100vh;
+font-family: 'Nunito', sans-serif;
+}
+
+/* ================= HEAD TITLE ================= */
+.head-title {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.head-title h1 {
+font-size: 22px;
+font-weight: 700;
+color: #2c3e50;
+}
+
+/* ================= TABLE ================= */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;              /* PENTING: kunci layout kolom */
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+}
+
+/* ===== HEADER ===== */
+.table thead {
+  background: #b81414;
+}
+
+.table thead th {
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* ===== BODY ===== */
+.table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fc;
+}
+
+.table tbody td {
+  padding: 14px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* ===== MODAL OVERLAY ===== */
+.custom-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 99999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== MODAL BOX ===== */
+.modal-content {
+  background: #fff;
+  max-width: 420px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  position: relative;
+  animation: zoomIn .25s ease;
+}
+
+
+/* ===== CLOSE ===== */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-btn:hover {
+  color: #e74a3b;
+}
+
+
+
+/* ================= ANIMATION ================= */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+/* ================= FORM ================= */
+.modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.modal-content input:focus,
+.modal-content select:focus {
+  outline: none;
+  border-color: #4e73df;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+
+
+
+
+/* ================= BADGE ================= */
+.badge {
+padding: 6px 14px;
+font-size: 12px;
+font-weight: 700;
+border-radius: 20px;
+}
+
+.badge-success {
+background: #1cc88a;
+color: #fff;
+}
+
+.badge-danger {
+background: #e74a3b;
+color: #fff;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+padding: 7px 14px;
+border-radius: 8px;
+font-size: 13px;
+border: none;
+cursor: pointer;
+display: inline-flex;
+align-items: center;
+gap: 6px;
+text-decoration: none;
+}
+
+.btn-sm {
+padding: 6px 10px;
+font-size: 12px;
+}
+
+.btn-primary {
+background: #4e73df;
+color: #fff;
+}
+
+.btn-primary:hover {
+background: #2e59d9;
+}
+
+.btn-warning {
+background: #f6c23e;
+color: #fff;
+}
+
+.btn-warning:hover {
+background: #dda20a;
+}
+
+.btn-danger {
+background: #e74a3b;
+color: #fff;
+}
+
+.btn-danger:hover {
+background: #c0392b;
+}
+
+.btn-secondary {
+background: #858796;
+color: #fff;
+}
+
+/* ================= ACTION ================= */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+
+/* ================= FOOTER ================= */
+/* FOOTER */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+.head-title {
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 10px;
+}
+
+.table thead {
+ display: none;
+}
+
+.table,
+.table tbody,
+.table tr,
+.table td {
+ display: block;
+ width: 100%;
+}
+
+.table tr {
+ margin-bottom: 15px;
+ background: #fff;
+ border-radius: 10px;
+ padding: 10px;
+}
+
+.table td {
+ display: flex;
+ justify-content: space-between;
+ padding: 8px 10px;
+}
+
+.table td::before {
+ content: attr(data-label);
+ font-weight: 700;
+ color: #555;
+}
+
+}
